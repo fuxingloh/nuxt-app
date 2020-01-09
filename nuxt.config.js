@@ -51,6 +51,7 @@ export default {
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
+    '@nuxtjs/axios',
     'portal-vue/nuxt',
   ],
   build: {

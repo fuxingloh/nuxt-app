@@ -1,27 +1,41 @@
 <template>
-  <div class="container flex-center">
-    <div class="flex-column-align-center pt-128 pb-128">
-      <logo/>
-      <h1 class="mt-8 mb-16">
-        nuxt-app
-      </h1>
-      <h5 class="mt-8">
-        Nuxt app template project with my customisation.
-      </h5>
+  <div class="container pt-48 pb-128">
+    <div>
+      <h1>Features</h1>
     </div>
+
+    <section>
+      <h3>Spinner</h3>
+      <spinner/>
+    </section>
+
+    <section>
+      <h3>API</h3>
+      <p>{{viaAxios}}</p>
+    </section>
   </div>
 </template>
 
 <script>
-  import Logo from '~/components/Logo.vue'
+  import Spinner from "../components/utils/Spinner";
+  import * as Cookies from "js-cookie";
 
   export default {
-    components: {
-      Logo
+    components: {Spinner},
+    asyncData({$axios}) {
+      return $axios.$get('/api/hello', {params: {world: 'Not World'}})
+        .then(value => {
+          return {
+            viaAxios: value
+          }
+        })
     }
   }
 </script>
 
 <style scoped lang="less">
-
+  h3 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
 </style>
