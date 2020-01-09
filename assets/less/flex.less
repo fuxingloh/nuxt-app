@@ -1,0 +1,257 @@
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex-row:extend(.flex) {
+  flex-direction: row;
+}
+
+.flex-column:extend(.flex) {
+  flex-direction: column;
+}
+
+.flex-align-end:extend(.flex) {
+  align-items: flex-end;
+}
+
+.flex-align-center:extend(.flex) {
+  align-items: center;
+}
+
+.flex-align-between:extend(.flex) {
+  align-items: center;
+}
+
+.flex-align-stretch:extend(.flex) {
+  align-items: stretch;
+}
+
+.flex-justify-end:extend(.flex) {
+  justify-content: flex-end;
+}
+
+.flex-justify-center:extend(.flex) {
+  justify-content: center;
+}
+
+.flex-justify-between:extend(.flex) {
+  justify-content: space-between;
+}
+
+.flex-wrap:extend(.flex) {
+  flex-wrap: wrap;
+}
+
+.flex-end:extend(.flex-align-end, .flex-justify-end) {
+}
+
+.flex-center:extend(.flex-align-center, .flex-justify-center) {
+}
+
+.flex-between:extend(.flex-align-between, .flex-justify-between) {
+}
+
+// Used to place object below
+.flex-column-justify-end:extend(.flex-column, .flex-justify-end) {
+}
+
+.flex-column-justify-between:extend(.flex-column, .flex-justify-between) {
+}
+
+.flex-column-align-center:extend(.flex-column, .flex-align-center) {
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+.flex-no-shrink {
+  flex-shrink: 0;
+}
+
+.flex-basis-content {
+  flex-basis: content;
+}
+
+.flex-self-stretch {
+  align-self: stretch;
+}
+
+.flex-self-start {
+  align-self: flex-start;
+}
+
+/**
+ * @deprecated
+ */
+.flex-1-2:extend(.flex-wrap) {
+  > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    @media (min-width: 576px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+/**
+ * @deprecated
+ */
+.flex-1-2-3:extend(.flex-wrap) {
+  > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    @media (min-width: 576px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    @media (min-width: 768px) {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+  }
+}
+
+/**
+ * @deprecated
+ */
+.flex-1-2-3-4:extend(.flex-wrap) {
+  > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    @media (min-width: 576px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    @media (min-width: 768px) {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+
+    @media (min-width: 992px) {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+}
+
+/**
+ * @deprecated
+ */
+.flex-1-2-3-4-5:extend(.flex-wrap) {
+  > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    @media (min-width: 576px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    @media (min-width: 768px) {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+
+    @media (min-width: 992px) {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+
+    @media (min-width: 1200px) {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+  }
+}
+
+.flex-6 {
+  flex: 0 0 16.66666%;
+  max-width: 16.66666%;
+}
+
+.flex-5 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.flex-4 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.flex-3 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.flex-2 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.flex-1 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.flex-2 {
+  @media (min-width: 576px) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.flex-3 {
+  @media (min-width: 768px) {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+.flex-4 {
+  @media (min-width: 992px) {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.flex-5 {
+  @media (min-width: 1200px) {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+.flex-6 {
+  @media (min-width: 1400px) {
+    flex: 0 0 16.66666%;
+    max-width: 16.66666%;
+  }
+}

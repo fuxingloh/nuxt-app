@@ -1,0 +1,86 @@
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.position-tb-0 {
+  top: 0;
+  bottom: 0;
+}
+
+.position-lr-0 {
+  left: 0;
+  right: 0;
+}
+
+.position-0 {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.absolute-0:extend(.absolute, .position-0) {
+}
+
+.position-r-0 {
+  right: 0;
+}
+
+/**
+  Aspect ratio utility
+ */
+.aspect {
+  position: relative;
+  width: 100%;
+
+  > * {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  // Width: 100%, Height: 30%
+  &.r-10-3 {
+    padding-top: 30%;
+  }
+
+  // Width: 100%, Height: 40%
+  &.r-5-2 {
+    padding-top: 40%;
+  }
+
+  // Width: 100%, Height: 50%
+  &.r-2-1 {
+    padding-top: 50%;
+  }
+
+  // Width: 100%, Height: 60%
+  &.r-5-3 {
+    padding-top: 60%;
+  }
+
+  // Width: 100%, Height: 80%
+  &.r-5-4 {
+    padding-top: 80%;
+  }
+
+  // Width: 100%, Height: 100%
+  &.r-1-1 {
+    padding-top: 100%;
+  }
+
+  // Width: 100%, Height: 120%
+  &.r-10-12 {
+    padding-top: 120%;
+  }
+}

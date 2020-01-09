@@ -1,0 +1,148 @@
+a, p, ul, li, .text {
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+}
+
+.heading:extend(.text) {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.h1:extend(.heading), h1:extend(.heading) {
+  font-size: 36px;
+}
+
+.h2:extend(.heading), h2:extend(.heading) {
+  font-size: 30px;
+}
+
+.h3:extend(.heading), h3:extend(.heading) {
+  font-size: 24px;
+}
+
+.h4:extend(.heading), h4:extend(.heading) {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.h5:extend(.heading), h5:extend(.heading) {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.h6:extend(.heading), h6:extend(.heading) {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.large:extend(.text) {
+  font-size: 20px;
+}
+
+.regular:extend(.text) {
+  font-size: 17px;
+}
+
+small:extend(.text), .small:extend(.text) {
+  font-size: 14px;
+}
+
+.tiny:extend(.text) {
+  font-size: 12px;
+}
+
+
+.text-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  word-break: break-word;
+
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+}
+
+.text-ellipsis-1l:extend(.text-ellipsis) {
+  -webkit-line-clamp: 1;
+}
+
+.text-ellipsis-2l:extend(.text-ellipsis) {
+  -webkit-line-clamp: 2;
+}
+
+.text-ellipsis-3l:extend(.text-ellipsis) {
+  -webkit-line-clamp: 3;
+}
+
+.text-ellipsis-4l:extend(.text-ellipsis) {
+  -webkit-line-clamp: 4;
+}
+
+.text-ellipsis-5l:extend(.text-ellipsis) {
+  -webkit-line-clamp: 5;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+
+  * > {
+    text-decoration: none;
+  }
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.lh-1-3 {
+  line-height: 1.3;
+}
+
+.lh-0 {
+  line-height: 0;
+}
+
+.weight-400 {
+  font-weight: 400;
+}
+
+.weight-500 {
+  font-weight: 500;
+}
+
+.weight-700 {
+  font-weight: 700;
+}

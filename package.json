@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "12.x"
+  },
   "name": "nuxt-app",
   "version": "1.0.0",
   "description": "Nuxt app template project with my customisation.",
@@ -11,8 +14,18 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/sitemap": "^2.0.1",
+    "dateformat": "^3.0.3",
+    "lodash": "^4.17.15",
     "nuxt": "^2.0.0",
-    "@nuxtjs/pwa": "^3.0.0-0"
+    "portal-vue": "^2.1.7",
+    "rxjs": "^6.5.4",
+    "vue-rx": "^6.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0"
+  }
 }

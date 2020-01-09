@@ -1,0 +1,22 @@
+.w-100, .wh-100 {
+  width: 100%;
+}
+
+.h-100, .wh-100 {
+  height: 100%;
+}
+
+.container:extend(.w-100) {
+  max-width: 1400px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media (min-width: 1200px) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
