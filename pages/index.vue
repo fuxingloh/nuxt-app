@@ -1,39 +1,31 @@
 <template>
   <div class="container pt-48 pb-128">
-    <div>
-      <h1>Features</h1>
+    <h1>Nuxt App Features</h1>
+
+    <example-spinner/>
+    <example-axios/>
+    <example-api/>
+
+    <div class="mt-48">
+      <h3>And More</h3>
+      <ul>
+        <li>More 1</li>
+      </ul>
     </div>
-
-    <section>
-      <h3>Spinner</h3>
-      <spinner/>
-    </section>
-
-    <section>
-      <h3>API</h3>
-      <p>{{viaAxios}}</p>
-    </section>
   </div>
 </template>
 
 <script>
-  import Spinner from "../components/utils/Spinner";
-  import * as Cookies from "js-cookie";
+  import ExampleAxios from "../components/examples/ExampleAxios";
+  import ExampleSpinner from "../components/examples/ExampleSpinner";
+  import ExampleApi from "../components/examples/ExampleApi";
 
   export default {
-    components: {Spinner},
-    asyncData({$axios}) {
-      return $axios.$get('/api/hello', {params: {world: 'Not World'}})
-        .then(value => {
-          return {
-            viaAxios: value
-          }
-        })
-    }
+    components: {ExampleApi, ExampleSpinner, ExampleAxios},
   }
 </script>
 
-<style scoped lang="less">
+<style lang="less">
   h3 {
     margin-top: 24px;
     margin-bottom: 8px;

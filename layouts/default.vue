@@ -1,6 +1,6 @@
 <template>
   <div class="Default flex-column">
-    <nav-header class="elevation-2"/>
+    <nav-header class="elevation-1"/>
     <div style="height: 64px"/>
 
     <div class="flex-grow">
