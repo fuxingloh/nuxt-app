@@ -4,18 +4,32 @@
       <h1>Features</h1>
     </div>
 
-    <div>
+    <section>
       <h3>Spinner</h3>
       <spinner/>
-    </div>
+    </section>
+
+    <section>
+      <h3>API</h3>
+      <p>{{viaAxios}}</p>
+    </section>
   </div>
 </template>
 
 <script>
   import Spinner from "../components/utils/Spinner";
+  import * as Cookies from "js-cookie";
 
   export default {
-    components: {Spinner}
+    components: {Spinner},
+    asyncData() {
+      this.$axios.$get('/api/hello', {params: {world: 'Not World'}})
+        .then(value => {
+          return {
+            viaAxios: value
+          }
+        })
+    }
   }
 </script>
 
