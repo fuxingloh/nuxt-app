@@ -24,7 +24,8 @@
     "portal-vue": "^2.1.7",
     "rxjs": "^6.5.4",
     "vue-router": "latest",
-    "vue-rx": "^6.2.0"
+    "vue-rx": "^6.2.0",
+    "vue-spinner": "^1.0.3"
   },
   "devDependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.2.0",

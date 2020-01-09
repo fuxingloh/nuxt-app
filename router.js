@@ -28,7 +28,6 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
  * Mapping: {'index': '/remapped-path'}
  */
 const paths = {
-  'index': '/api'
 }
 
 function remap(route) {
