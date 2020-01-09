@@ -1,5 +1,3 @@
-import webpack from 'webpack'
-
 const title = 'nuxt-app'
 const description = 'Nuxt app template project with my customisation.'
 const image = ''
@@ -41,7 +39,12 @@ export default {
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [],
+  buildModules: [
+    ['@nuxtjs/router', {
+      fileName: 'router.js',
+      keepDefaultRouter: true
+    }]
+  ],
   /*
   ** Nuxt.js modules
   */
@@ -55,13 +58,7 @@ export default {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-
     },
-    plugins: [
-      new webpack.ProvidePlugin({
-        '_': 'lodash'
-      }),
-    ],
     babel: {
       plugins: ["@babel/plugin-proposal-optional-chaining"]
     },
