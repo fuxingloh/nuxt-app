@@ -1,5 +1,3 @@
-import webpack from 'webpack'
-
 const title = 'nuxt-app'
 const description = 'Nuxt app template project with my customisation.'
 const image = ''
@@ -57,11 +55,6 @@ export default {
     extend(config, ctx) {
 
     },
-    plugins: [
-      new webpack.ProvidePlugin({
-        '_': 'lodash'
-      }),
-    ],
     babel: {
       plugins: ["@babel/plugin-proposal-optional-chaining"]
     },
