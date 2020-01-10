@@ -1,7 +1,7 @@
 <template>
   <section>
     <h3>Serverless API via @nuxtjs/axios</h3>
-    <p>Data: {{value}}</p>
+    <p class="text-ellipsis-4l">Data: {{value}}</p>
   </section>
 </template>
 

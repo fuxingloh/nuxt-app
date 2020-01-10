@@ -1,11 +1,16 @@
 <template>
   <div class="container pt-32 pb-128">
-    <h1>Nuxt App Features</h1>
+    <h1 class="mtb-24">Nuxt App Features</h1>
 
     <example-spinner/>
     <example-axios/>
     <example-api/>
     <example-path/>
+    <example-text-auto/>
+    <example-text-input/>
+    <example-notification/>
+    <example-dialog/>
+
   </div>
 </template>
 
@@ -14,15 +19,26 @@
   import ExampleSpinner from "../components/examples/ExampleSpinner";
   import ExampleApi from "../components/examples/ExampleApi";
   import ExamplePath from "../components/examples/ExamplePath";
+  import ExampleTextAuto from "../components/examples/ExampleTextAuto";
+  import ExampleTextInput from "../components/examples/ExampleTextInput";
+  import ExampleNotification from "../components/examples/ExampleNotification";
+  import ExampleDialog from "../components/examples/ExampleDialog";
 
   export default {
-    components: {ExamplePath, ExampleApi, ExampleSpinner, ExampleAxios},
+    components: {
+      ExampleDialog,
+      ExampleNotification,
+      ExampleTextInput, ExampleTextAuto, ExamplePath, ExampleApi, ExampleSpinner, ExampleAxios
+    },
   }
 </script>
 
 <style lang="less">
   h3 {
-    margin-top: 24px;
     margin-bottom: 8px;
+  }
+
+  section {
+    margin-bottom: 64px;
   }
 </style>

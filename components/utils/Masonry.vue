@@ -22,7 +22,7 @@
   }
 
   export default {
-    name: "MasonryLanes",
+    name: "Masonry",
     props: {
       items: {
         type: Array,

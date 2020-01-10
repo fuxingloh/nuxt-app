@@ -5,7 +5,7 @@
 
     <div class="flex-end mt-16">
       <button class="mr-16" :class="_options.cancel.class" @click="_onCancel">Cancel</button>
-      <button :class="_options.confirm.class || 'blue'" @click="_onConfirm">Confirm</button>
+      <button :class="_options.confirm.class || 'primary'" @click="_onConfirm">Confirm</button>
     </div>
   </div>
 </template>

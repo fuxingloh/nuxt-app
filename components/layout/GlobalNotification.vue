@@ -7,10 +7,10 @@
            'white bg-error': notification.type === 'error'
            }">
         <div>
-          <div class="heading mb-8" v-if="notification.title">
+          <div class="heading" v-if="notification.title">
             {{notification.title}}
           </div>
-          <div class="text mb-8" v-if="notification.message">
+          <div class="text" v-if="notification.message">
             {{notification.message}}
           </div>
         </div>
@@ -41,10 +41,6 @@
 
   .NotificationBox {
     width: 300px;
-
-    > div {
-      margin-bottom: -8px;
-    }
 
     animation-name: move-down;
     animation-duration: 400ms;
