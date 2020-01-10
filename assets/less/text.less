@@ -1,3 +1,13 @@
+@import "colors";
+
+.monospace {
+  font-family: monospace;
+}
+
+.italic {
+  font-style: italic;
+}
+
 a, p, ul, li, .text {
   line-height: 1.5;
   font-weight: 400;
@@ -48,10 +58,15 @@ small:extend(.text), .small:extend(.text) {
   font-size: 14px;
 }
 
+.small-bold:extend(.small, .weight-500) {
+}
+
 .tiny:extend(.text) {
   font-size: 12px;
 }
 
+.tiny-bold:extend(.tiny, .weight-500) {
+}
 
 .text-ellipsis {
   overflow: hidden;

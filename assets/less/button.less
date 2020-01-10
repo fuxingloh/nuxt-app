@@ -1,12 +1,77 @@
+@import "colors";
+@import "elevation";
+
 button {
   border-radius: 5px;
   border: 0;
-  padding: 8px 24px;
+  padding: 8px 24px !important;
 
-  line-height: 1.3;
-  font-size: 17px;
+  line-height: 1.5;
+  font-size: 16px;
   font-weight: 700;
 
   background: white;
-  color: black;
+  color: black !important;
+
+  &.primary {
+    background: @Primary !important;
+    color: white !important;
+  }
+
+  &.secondary {
+    background: @Secondary !important;
+    color: white !important;
+  }
+
+  &.danger {
+    background: @Error !important;
+    color: white !important;
+  }
+
+  &.outline {
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+
+    border: 1px solid rgba(0, 0, 0, .15) !important;
+  }
+
+  &.primary-outline:extend(button.outline) {
+    color: @Primary !important;
+    border: 1px solid @Primary !important;
+  }
+
+  &.secondary-outline:extend(button.outline) {
+    color: @Secondary !important;
+    border: 1px solid @Secondary !important;
+  }
+
+  &.border:extend(button.outline) {
+    background: white !important;
+  }
+
+  &.elevated:extend(.elevation-1) {
+    padding-bottom: 7px;
+  }
+
+  &.small {
+    padding: 5px 16px !important;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  &.tiny {
+    padding: 4px 12px !important;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &.disabled {
+    background: rgb(250, 250, 250);
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }

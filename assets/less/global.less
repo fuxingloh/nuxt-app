@@ -10,6 +10,15 @@ body {
   margin: 0;
 }
 
+.block {
+  display: block;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
 .hover-pointer {
   &:hover {
     cursor: pointer;
@@ -20,13 +29,41 @@ body {
   overflow: hidden;
 }
 
-@import "display";
-@import "container";
+.overflow-y-auto {
+  overflow-y: auto;
+}
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+
+
+// Layout
+@import "container";
+@import "viewport";
+@import "z-index";
 @import "spacing";
 @import "flex";
+@import "position";
+
+// Core
+@import "aspect";
+@import "colors";
 @import "text";
 
-@import "button";
-@import "border";
+// Aesthetic
 @import "elevation";
+@import "border";
+@import "size";
+
+// Component
+@import "button";
+@import "dialog";

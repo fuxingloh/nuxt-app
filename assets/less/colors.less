@@ -1,0 +1,119 @@
+@Primary: #07F;
+@Secondary: #F07;
+
+@Black: #000;
+@White: #FFF;
+
+// UI: Color Palette
+@Steam: #F5F5F5;
+@Fog: rgba(200, 200, 200, 0.96);
+@BorderColor: #EFEFEF;
+
+// Visual Indicator
+@Success: #20A700;
+@Error: #EC152C;
+
+.black {
+  color: @Black;
+}
+
+.bg-black {
+  background: @Black;
+}
+
+.white {
+  color: @White;
+
+  * > {
+    color: @White;
+  }
+}
+
+.bg-white {
+  background: @White;
+}
+
+.primary, .primary-hover:hover {
+  color: @Primary;
+}
+
+.bg-primary {
+  background: @Primary;
+}
+
+.secondary, .secondary-hover:hover {
+  color: @Secondary;
+}
+
+.bg-secondary {
+  background: @Secondary;
+}
+
+.steam {
+  color: @Steam;
+}
+
+.bg-steam {
+  background: @Steam;
+}
+
+.b-a40, .black-a40 {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.b-a50, .black-a50 {
+  color: rgba(0, 0, 0, 0.50);
+}
+
+.b-a60, .black-a60 {
+  color: rgba(0, 0, 0, 0.60);
+}
+
+.b-a75, .black-a70 {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.b-a75, .black-a75 {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.b-a80, .black-a80 {
+  color: rgba(0, 0, 0, 0.80);
+}
+
+.b-a85, .black-a85 {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.bg-black-a50 {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.bg-fog {
+  background: @Fog;
+}
+
+// Visual Indicator Color
+.success {
+  color: @Success;
+}
+
+.bg-success {
+  background: @Success;
+}
+
+.error {
+  color: @Error;
+}
+
+.bg-error {
+  background: @Error;
+}
+
+.bg-translucent {
+  background: rgba(240, 240, 240, 0.95);
+}
