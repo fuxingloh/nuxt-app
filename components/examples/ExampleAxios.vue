@@ -14,7 +14,7 @@
       }
     },
     mounted() {
-      return this.$axios.$get('/api/hello', {params: {world: 'Not World'}})
+      return this.$axios.$get('/api/hello', {params: {name: 'API via @nuxtjs/axios'}})
         .then(value => {
           this.value = value
         })

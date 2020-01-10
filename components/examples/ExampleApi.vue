@@ -14,7 +14,7 @@
       }
     },
     mounted() {
-      return this.$api.get('/hello', {params: {world: 'Not World'}})
+      return this.$api.get('/hello', {params: {name: 'API via plugins/api'}})
         .then(value => {
           this.value = value
         })
