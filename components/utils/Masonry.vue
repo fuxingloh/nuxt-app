@@ -2,7 +2,7 @@
   <div ref="wall" class="MasonryWall" :style="style.wall" :class="{Ready: ready}">
     <div class="MasonryWallLane" v-for="(lane, index) in lanes" :key="index" :style="style.lane">
       <div class="MasonryWallItem" v-for="i in lane.indexes" :key="i" :style="style.item" :ref="`item_${i}`">
-        <slot name="item" v-bind:item="items[i]" :index="i">{{items[i]}}</slot>
+        <slot v-bind:item="items[i]" :index="i">{{items[i]}}</slot>
       </div>
 
       <div ref="spacers" class="Spacers index--1" :data-lane="index"

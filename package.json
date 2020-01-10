@@ -26,6 +26,7 @@
     "portal-vue": "^2.1.7",
     "rxjs": "^6.5.4",
     "uuid": "^3.3.3",
+    "vue-observe-visibility": "^0.4.6",
     "vue-router": "latest",
     "vue-rx": "^6.2.0",
     "vue-spinner": "^1.0.3"

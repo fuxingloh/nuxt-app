@@ -10,6 +10,8 @@
     <example-text-input/>
     <example-notification/>
     <example-dialog/>
+    <example-horizontal-list/>
+    <example-masonry/>
 
   </div>
 </template>
@@ -23,9 +25,13 @@
   import ExampleTextInput from "../components/examples/ExampleTextInput";
   import ExampleNotification from "../components/examples/ExampleNotification";
   import ExampleDialog from "../components/examples/ExampleDialog";
+  import ExampleHorizontalList from "../components/examples/ExampleHorizontalList";
+  import ExampleMasonry from "../components/examples/ExampleMasonry";
 
   export default {
     components: {
+      ExampleMasonry,
+      ExampleHorizontalList,
       ExampleDialog,
       ExampleNotification,
       ExampleTextInput, ExampleTextAuto, ExamplePath, ExampleApi, ExampleSpinner, ExampleAxios

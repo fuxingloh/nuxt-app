@@ -35,8 +35,12 @@ export default {
   */
   plugins: [
     '~/plugins/api',
+    '~/plugins/err',
+    '~/plugins/path',
+    '~/plugins/router',
 
     '~/plugins/vue-rx',
+    '~/plugins/vue-observe-visibility.js',
   ],
   /*
   ** Nuxt.js dev-modules
