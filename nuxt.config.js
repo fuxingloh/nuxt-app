@@ -56,6 +56,9 @@ export default {
     '@nuxtjs/axios',
     'portal-vue/nuxt',
   ],
+  axios: {
+    proxy: true
+  },
   build: {
     /*
     ** You can extend webpack config here

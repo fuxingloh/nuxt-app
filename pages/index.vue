@@ -5,13 +5,7 @@
     <example-spinner/>
     <example-axios/>
     <example-api/>
-
-    <div class="mt-48">
-      <h3>And More</h3>
-      <ul>
-        <li>More 1</li>
-      </ul>
-    </div>
+    <example-path/>
   </div>
 </template>
 
@@ -19,9 +13,10 @@
   import ExampleAxios from "../components/examples/ExampleAxios";
   import ExampleSpinner from "../components/examples/ExampleSpinner";
   import ExampleApi from "../components/examples/ExampleApi";
+  import ExamplePath from "../components/examples/ExamplePath";
 
   export default {
-    components: {ExampleApi, ExampleSpinner, ExampleAxios},
+    components: {ExamplePath, ExampleApi, ExampleSpinner, ExampleAxios},
   }
 </script>
 
