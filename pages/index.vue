@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-48 pb-128">
+  <div class="container pt-32 pb-128">
     <h1>Nuxt App Features</h1>
 
     <example-spinner/>

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>API via @nuxtjs/axios</h3>
+    <h3>Serverless API via @nuxtjs/axios</h3>
     <p>Data: {{value}}</p>
   </section>
 </template>

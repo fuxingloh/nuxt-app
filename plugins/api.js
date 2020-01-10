@@ -1,28 +1,21 @@
-// import FormData from "form-data"
+import FormData from "form-data"
 
-// const apiVersion = 'v0.29.0'
-
+/**
+ * Options: onResponse(response)
+ * For each request, manipulate the response post-flight
+ * `$axios.onResponse((response) => { })`
+ *
+ * Options: onRequest(config)
+ * For each request, manipulate the request config preflight
+ * `$axios.onRequest(config => { return config })`
+ *
+ *
+ *
+ * @param context
+ * @param inject
+ */
 export default function (context, inject) {
-  const {$axios, store, req} = context
-
-  // $axios.onResponse((response) => {
-  //   if (response.data && response.data.error) {
-  //     const error = response.data.error
-  //     throw({statusCode: error.code, message: error.message, response})
-  //   }
-  // })
-
-  // $axios.onRequest(config => {
-  //   // Get user Id token
-  //   return authenticator.getIdToken().then(({token}) => {
-  //     if (token) config.headers['Authorization'] = `Bearer ${token}`
-  //     return config
-  //   }).catch(() => {
-  //     // Error, Logout User,
-  //     store.dispatch('account/signOut')
-  //     return config
-  //   })
-  // });
+  const {$axios} = context
 
   context.$api = {
     get: (path, config) => $axios.$get(`/api` + path, config),
@@ -31,13 +24,24 @@ export default function (context, inject) {
     patch: (path, data, config) => $axios.$patch(`/api` + path, data, config),
     delete: (path, data, config) => $axios.$delete(`/api` + path, data, config),
 
-    // postImage: (file, source) => {
-    //   const form = new FormData()
-    //   form.append('file', file, file.name)
-    //   form.append("source", source)
-    //   console.log(process.env.apiUrl)
-    //   return $axios.$post(`${process.env.apiUrl}${apiVersion}/me/images`, form)
-    // },
+    /**
+     * @param path to post file to
+     * @param file to post
+     * @param params additional params to add to FormData
+     * @returns {Promise<any>}
+     */
+    postFile: (path, file, params) => {
+      const form = new FormData()
+      form.append('file', file, file.name)
+
+      if (params) {
+        Object.keys(params).forEach(key => {
+          form.append(key, params[key])
+        })
+      }
+
+      return $axios.$post(`/api` + path, form)
+    },
   }
   inject('api', context.$api)
 }
