@@ -2,10 +2,8 @@
   <section>
     <h3>Path Manipulation</h3>
 
-    <code>
-<pre>this.$path.replace({path: `/${slug}-${id}`})
+    <pre class="border-3 p-12-16 bg-steam">this.$path.replace({path: `/${slug}-${id}`})
 this.$path.replace({query: {foo:'bar'}})</pre>
-    </code>
   </section>
 </template>
 

@@ -8,6 +8,6 @@
 
 <script>
   export default {
-    name: "Cancel",
+    name: "IconCancel",
   }
 </script>
