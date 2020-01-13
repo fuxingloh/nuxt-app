@@ -1,20 +1,18 @@
 <template>
   <section>
-    <h3>Masonry (Endless appending)</h3>
-
-    <masonry :items="items" :options="options" @append="append">
+    <vue-masonry-wall :items="items" :options="options" @append="append">
       <template v-slot:default="{item}">
         <div class="p-16-24 border-3 bg-steam">
           <h5>{{item.title}}</h5>
           <p class="text-ellipsis">{{item.content}}</p>
         </div>
       </template>
-    </masonry>
+    </vue-masonry-wall>
   </section>
 </template>
 
 <script>
-  import Masonry from "../utils/Masonry";
+  import VueMasonryWall from "vue-masonry-wall";
 
   function content() {
     const length = Math.random() * 300 + 30
@@ -30,16 +28,15 @@
 
   export default {
     name: "ExampleMasonry",
-    components: {Masonry},
+    components: {VueMasonryWall},
     data() {
       return {
         options: {
           width: 300,
-          lanes: {
-            2: {padding: 8}
+          padding: {
+            2: 8,
+            default: 12
           },
-          min: 2,
-          ssr: {default: 2}
         },
         items: [
           {title: 'Item 0', content: content()},
@@ -57,7 +54,9 @@
     },
     methods: {
       append() {
-        this.items.push({title: `Item ${this.items.length}`, content: content()})
+        for (let i = 0; i < 20; i++) {
+          this.items.push({title: `Item ${this.items.length}`, content: content()})
+        }
       }
     }
   }

@@ -7255,6 +7255,13 @@ vue-loader@^15.8.3:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-masonry-wall@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/vue-masonry-wall/-/vue-masonry-wall-0.2.0.tgz#bde5ad873aee2e3e142856b15e0e543c02370839"
+  integrity sha512-4yfGsn0UOiqNqlcfa/7FM1vSgJrvmgFVFu7WW6a8F5c3Hrh8Gkv+9TJAXvy9PiVRqVQcsqyD0xuvKrEQq4mhiA==
+  dependencies:
+    vue-observe-visibility "^0.4.6"
+
 vue-meta@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/vue-meta/-/vue-meta-2.3.1.tgz#32a1c2634f49433f30e7e7a028aa5e5743f84f6a"
