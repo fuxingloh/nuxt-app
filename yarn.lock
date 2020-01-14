@@ -7239,6 +7239,11 @@ vue-client-only@^2.0.0:
   resolved "https://registry.yarnpkg.com/vue-client-only/-/vue-client-only-2.0.0.tgz#ddad8d675ee02c761a14229f0e440e219de1da1c"
   integrity sha512-arhk1wtWAfLsJyxGMoEYhoBowM87/i6HLSG2LH/03Yog6i2d9JEN1peMP0Ceis+/n9DxdenGYZZTxbPPJyHciA==
 
+vue-horizontal-list@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/vue-horizontal-list/-/vue-horizontal-list-0.1.1.tgz#c177e3ac789e4dd5ff62b2945908509175621744"
+  integrity sha512-nnpt513U8Ni6oVfn0zKLGUYPW3SZnD94cMgqlC/4Tvplf4tm92L92ohrUMMj9OkUKwVoa1vfne+ZaSD0LCCQzA==
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
@@ -7255,10 +7260,10 @@ vue-loader@^15.8.3:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-masonry-wall@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/vue-masonry-wall/-/vue-masonry-wall-0.2.0.tgz#bde5ad873aee2e3e142856b15e0e543c02370839"
-  integrity sha512-4yfGsn0UOiqNqlcfa/7FM1vSgJrvmgFVFu7WW6a8F5c3Hrh8Gkv+9TJAXvy9PiVRqVQcsqyD0xuvKrEQq4mhiA==
+vue-masonry-wall@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/vue-masonry-wall/-/vue-masonry-wall-0.2.1.tgz#63990e5e59c06c4ddf57dba8a0d1de06a88bda3b"
+  integrity sha512-6zZqEv4Djww+4evt2DPoUzKzbKio772QnkkF9+/kD1/i/aGKz0fEXT6oI6igSJ8+dOiA0pF3gPl/Ohh1cwPTKg==
   dependencies:
     vue-observe-visibility "^0.4.6"
 

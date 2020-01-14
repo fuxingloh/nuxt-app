@@ -1,5 +1,7 @@
 <template>
   <section>
+    <h1 class="mtb-24">Vue Masonry Wall</h1>
+
     <vue-masonry-wall :items="items" :options="options" @append="append">
       <template v-slot:default="{item}">
         <div class="p-16-24 border-3 bg-steam">

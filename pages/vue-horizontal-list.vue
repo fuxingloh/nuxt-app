@@ -1,15 +1,16 @@
 <template>
   <div class="container pt-32 pb-128">
-    <example-masonry/>
+    <example-horizontal-list/>
   </div>
 </template>
 
 <script>
-  import ExampleMasonry from "../components/examples/ExampleMasonry";
+
+  import ExampleHorizontalList from "../components/examples/ExampleHorizontalList";
 
   export default {
     components: {
-      ExampleMasonry,
+      ExampleHorizontalList
     },
   }
 </script>

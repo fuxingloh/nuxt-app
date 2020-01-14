@@ -1,24 +1,76 @@
 <template>
   <section>
-    <h3>Horizontal List</h3>
+    <h1 class="mtb-24">Vue Horizontal List</h1>
 
-    <horizontal-list :items="items" :options="{size: 3}">
-      <template v-slot:default="{item}">
-        <div class="p-16-24 border-3 bg-steam">
-          <h5>{{item.title}}</h5>
-          <p>{{item.content}}</p>
-        </div>
-      </template>
-    </horizontal-list>
+    <div class="p-24 bg-steam border-3">
+      <h5>Just a DIV</h5>
+    </div>
+
+    <div>
+      <vue-horizontal-list :items="items" :options="{responsive: [{size: 1}]}">
+        <template v-slot:default="{item}">
+          <div class="p-16-24 bg-steam border-3">
+            <h5>{{item.title}}</h5>
+            <p>{{item.content}}</p>
+          </div>
+        </template>
+      </vue-horizontal-list>
+    </div>
+
+    <div>
+      <vue-horizontal-list :items="items" :options="{responsive: [{end: 576, size: 1}, {size: 2}]}">
+        <template v-slot:default="{item}">
+          <div class="p-16-24 bg-steam border-3">
+            <h5>{{item.title}}</h5>
+            <p>{{item.content}}</p>
+          </div>
+        </template>
+      </vue-horizontal-list>
+    </div>
+
+    <div>
+      <vue-horizontal-list :items="items"
+                           :options="{responsive: [{end: 576, size: 1}, {start: 576, end: 768, size: 2},{size: 3}]}">
+        <template v-slot:default="{item}">
+          <div class="p-16-24 bg-steam border-3">
+            <h5>{{item.title}}</h5>
+            <p>{{item.content}}</p>
+          </div>
+        </template>
+      </vue-horizontal-list>
+    </div>
+
+    <div>
+      <vue-horizontal-list :items="items"
+                           :options="{responsive: [{end: 576, size: 1}, {start: 576, end: 768, size: 2},{start: 768, end: 992, size: 3},{size: 4}]}">
+        <template v-slot:default="{item}">
+          <div class="p-16-24 bg-steam border-3">
+            <h5>{{item.title}}</h5>
+            <p>{{item.content}}</p>
+          </div>
+        </template>
+      </vue-horizontal-list>
+    </div>
+
+    <div>
+      <vue-horizontal-list :items="items">
+        <template v-slot:default="{item}">
+          <div class="p-16-24 bg-steam border-3">
+            <h5>{{item.title}}</h5>
+            <p>{{item.content}}</p>
+          </div>
+        </template>
+      </vue-horizontal-list>
+    </div>
   </section>
 </template>
 
 <script>
-  import HorizontalList from "../utils/HorizontalList";
+  import VueHorizontalList from "vue-horizontal-list";
 
   export default {
     name: "ExampleHorizontalList",
-    components: {HorizontalList},
+    components: {VueHorizontalList},
     data() {
       return {
         items: [
@@ -36,7 +88,3 @@
     }
   }
 </script>
-
-<style scoped>
-
-</style>
