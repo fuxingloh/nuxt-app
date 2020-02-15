@@ -9,7 +9,12 @@
 </template>
 
 <script>
+  import MoonLoader from 'vue-spinner/src/MoonLoader.vue'
+
   export default {
-    name: "LoadingDialog"
+    name: "LoadingDialog",
+    components: {
+      MoonLoader
+    }
   }
 </script>
