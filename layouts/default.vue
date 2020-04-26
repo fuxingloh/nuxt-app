@@ -10,7 +10,7 @@
     <global-dialog/>
     <global-notification/>
 
-    <nav-footer class="elevation-2"/>
+<!--    <nav-footer class="elevation-2"/>-->
   </div>
 </template>
 

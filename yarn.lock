@@ -7309,10 +7309,10 @@ vue-client-only@^2.0.0:
   resolved "https://registry.yarnpkg.com/vue-client-only/-/vue-client-only-2.0.0.tgz#ddad8d675ee02c761a14229f0e440e219de1da1c"
   integrity sha512-arhk1wtWAfLsJyxGMoEYhoBowM87/i6HLSG2LH/03Yog6i2d9JEN1peMP0Ceis+/n9DxdenGYZZTxbPPJyHciA==
 
-vue-horizontal-list@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/vue-horizontal-list/-/vue-horizontal-list-0.1.2.tgz#58507060bae554fe37aa3a0b04a62d12629a04cc"
-  integrity sha512-BliGOkRqwAhsXU/wvigSnctNKQx1i809uweABZy35zF5phdFi3N3HX+pzky3XGYVdk3XCeVaLiHD6WlnX3nm5A==
+vue-horizontal-list@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/vue-horizontal-list/-/vue-horizontal-list-1.0.5.tgz#5d32a74ebb159e230146e1701cb86dcbd939c237"
+  integrity sha512-A7yOSo4nhT8qP3Z9iXazJ28llFMovkzwHyBFaNFKvPeJILv0UGSclnHzjvB5z6htKkUTszVINBSVD6Mwht7k+w==
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"

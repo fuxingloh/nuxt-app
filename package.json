@@ -26,7 +26,7 @@
     "portal-vue": "^2.1.7",
     "rxjs": "^6.5.4",
     "uuid": "^3.3.3",
-    "vue-horizontal-list": "^0.1.2",
+    "vue-horizontal-list": "^1.0.5",
     "vue-masonry-wall": "^0.2.2",
     "vue-observe-visibility": "^0.4.6",
     "vue-router": "^3.1.5",

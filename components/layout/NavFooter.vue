@@ -12,8 +12,6 @@
 
             <h4 class="ml-16">Nuxt App</h4>
           </div>
-
-          <p>Nuxt app template project with my customisation.</p>
         </div>
       </div>
     </div>
