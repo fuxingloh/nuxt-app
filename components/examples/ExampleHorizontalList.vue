@@ -3,7 +3,7 @@
     <h1 class="mb-24">Vue Horizontal List</h1>
 
     <div class="p-24 bg-steam border-3">
-      <h5>Just a empty DIV, for comparision.</h5>
+      <h5>Just an empty DIV, for comparision.</h5>
     </div>
 
     <div>

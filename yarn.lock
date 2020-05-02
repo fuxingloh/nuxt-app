@@ -7314,10 +7314,10 @@ vue-client-only@^2.0.0:
   resolved "https://registry.yarnpkg.com/vue-client-only/-/vue-client-only-2.0.0.tgz#ddad8d675ee02c761a14229f0e440e219de1da1c"
   integrity sha512-arhk1wtWAfLsJyxGMoEYhoBowM87/i6HLSG2LH/03Yog6i2d9JEN1peMP0Ceis+/n9DxdenGYZZTxbPPJyHciA==
 
-vue-horizontal-list@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/vue-horizontal-list/-/vue-horizontal-list-1.0.6.tgz#74f46dc6d7f41721ad1703e6069c09a1b0d61230"
-  integrity sha512-mU/1khXkq4XYCSjZatLXXGWHMNj4Y4MQ4kgLkvllSl/nJIdbojQgv0nS+sKi7988OX3Yvexq/I3JGWsfr7S9Kw==
+vue-horizontal-list@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/vue-horizontal-list/-/vue-horizontal-list-1.0.7.tgz#9bf747ea76506d3ee80379822f908895df91d4f6"
+  integrity sha512-9kigZpjKp//3Eu4+9KFVpWYVIu1Cx1C2nP/Pv/oXiynQObDSQfcsgIIpabNa3/qLv8QHy10w5yy99MRLBRP6Mw==
   dependencies:
     smoothscroll-polyfill "^0.4.4"
 
